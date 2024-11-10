@@ -15,11 +15,11 @@ document.addEventListener('DOMContentLoaded', function() {
             id: 1,
             user: {
                 name: '王者玩家',
-                avatar: 'images/avatars/user1.jpg'
+                avatar: './img/后羿.webp'
             },
             time: '2小时前',
             content: '分享一波五杀操作，这波团战配合太完美了！',
-            media: 'images/posts/post1.jpg',
+            media: './img/进阶.webp',
             tags: ['精彩操作', '团战'],
             likes: 2500,
             comments: 328,

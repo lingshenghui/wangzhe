@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
             price: 788,
             originalPrice: 888,
             discount: 11,
-            image: 'images/shop/skin1.jpg',
+            image: './img/李白-凤求凰.webp',
             category: 'skins',
             tag: '新品'
         },
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
             price: 468,
             originalPrice: 648,
             discount: 15,
-            image: 'images/shop/skin2.jpg',
+            image: './img/妲己-女仆咖啡.webp',
             category: 'skins',
             tag: '热销'
         },
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
             price: 5888,
             originalPrice: 6888,
             discount: 20,
-            image: 'images/shop/hero1.jpg',
+            image: './img/云缨.webp',
             category: 'heroes',
             tag: '新英雄'
         },
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
             price: 1288,
             originalPrice: 1688,
             discount: 25,
-            image: 'images/shop/gift1.jpg',
+            image: './img/超值礼包.webp',
             category: 'gifts',
             tag: '限时'
         },
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
             price: 998,
             originalPrice: 1288,
             discount: 30,
-            image: 'images/shop/gift2.jpg',
+            image: './img/新手大礼包.webp',
             category: 'gifts',
             tag: '特惠'
         },
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
             price: 299,
             originalPrice: 399,
             discount: 10,
-            image: 'images/shop/merch1.jpg',
+            image: './img/王者荣耀T恤.webp',
             category: 'merch',
             tag: '新品'
         },
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
             price: 128,
             originalPrice: 168,
             discount: 15,
-            image: 'images/shop/merch2.jpg',
+            image: './img/王者荣耀T恤.webp',
             category: 'merch',
             tag: '热卖'
         }

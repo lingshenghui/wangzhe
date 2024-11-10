@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
             survival: 90,
             attack: 40,
             skill: 50,
-            image: 'zhangfei.jpg'
+            image: './img/张飞.webp'
         },
         {
             name: '程咬金',
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
             survival: 85,
             attack: 45,
             skill: 45,
-            image: 'chengyaojin.jpg'
+            image: './img/程咬金.webp'
         },
         // 战士
         {
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
             survival: 70,
             attack: 80,
             skill: 60,
-            image: 'caocao.jpg'
+            image: './img/曹操.webp'
         },
         {
             name: '花木兰',
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
             survival: 65,
             attack: 75,
             skill: 70,
-            image: 'huamulan.jpg'
+            image: './img/花木兰.webp'
         },
         // 刺客
         {
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
             survival: 40,
             attack: 90,
             skill: 70,
-            image: 'libai.jpg'
+            image: './img/李白.webp'
         },
         {
             name: '韩信',
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
             survival: 35,
             attack: 95,
             skill: 65,
-            image: 'hanxin.jpg'
+            image: './img/韩信.webp'
         },
         // 法师
         {
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
             survival: 35,
             attack: 85,
             skill: 95,
-            image: 'daji.jpg'
+            image: './img/妲己.webp'
         },
         {
             name: '安琪拉',
@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
             survival: 30,
             attack: 90,
             skill: 90,
-            image: 'angela.jpg'
+            image: './img/安琪拉.webp'
         },
         // 射手
         {
@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
             survival: 40,
             attack: 95,
             skill: 60,
-            image: 'houyi.jpg'
+            image: './img/后羿.webp'
         },
         {
             name: '孙尚香',
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
             survival: 45,
             attack: 90,
             skill: 65,
-            image: 'sunshangxiang.jpg'
+            image: './img/孙尚香.webp'
         },
         // 辅助
         {
@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function() {
             survival: 60,
             attack: 35,
             skill: 85,
-            image: 'caiwenji.jpg'
+            image: './img/蔡文姬.webp'
         },
         {
             name: '孙膑',
@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
             survival: 55,
             attack: 40,
             skill: 90,
-            image: 'sunbin.jpg'
+            image: './img/孙膑.webp'
         }
     ];
 
@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             heroCard.innerHTML = `
                 <div class="hero-avatar">
-                    <img src="images/heroes/${hero.image}" alt="${hero.name}">
+                    <img src="${hero.image}" alt="${hero.name}">
                     <div class="hero-difficulty">
                         <span class="difficulty-level">难度：</span>
                         <span class="stars">${hero.difficulty}</span>
@@ -249,7 +249,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         modalTitle.textContent = hero.name;
         modalSubtitle.textContent = hero.title;
-        modalBanner.src = `images/heroes/${hero.image}`;
+        modalBanner.src = `img/heroes/${hero.image}`;
 
         modal.style.display = 'block';
     }

@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', function() {
             matches: [
                 {
                     time: '19:30',
-                    team1: 'AG超玩会',
-                    team2: 'WE',
+                    team1: 'ag',
+                    team2: '亚瑟',
                     status: '未开始'
                 },
                 // 更多比赛数据
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const rankingsData = [
         {
             rank: 1,
-            team: 'AG超玩会',
+            team: 'ag',
             matches: 10,
             wins: 8,
             losses: 2,
@@ -72,9 +72,9 @@ document.addEventListener('DOMContentLoaded', function() {
                             <div class="match-time">${match.time}</div>
                             <div class="match-teams">
                                 <span>${match.team1}</span>
-                                <img src="images/teams/${match.team1.toLowerCase()}.png" alt="${match.team1}">
+                                <img src="./img/${match.team1.toLowerCase()}.webp" alt="${match.team1}">
                                 <div class="score">VS</div>
-                                <img src="images/teams/${match.team2.toLowerCase()}.png" alt="${match.team2}">
+                                <img src="./img/${match.team2.toLowerCase()}.webp" alt="${match.team2}">
                                 <span>${match.team2}</span>
                             </div>
                             <div class="match-status">${match.status}</div>
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="row">
                 <div class="rank">${team.rank}</div>
                 <div class="team">
-                    <img src="images/teams/${team.team.toLowerCase()}.png" alt="${team.team}">
+                    <img src="./img/${team.team.toLowerCase()}.webp" alt="${team.team}">
                     ${team.team}
                 </div>
                 <div class="matches">${team.matches}</div>
