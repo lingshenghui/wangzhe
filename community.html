@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>社区 - 王者荣耀官方网站</title>
+    <link rel="stylesheet" href="css/community.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏保持一致 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="./img/logo.webp" alt="王者荣耀">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="heroes.html">英雄</a></li>
+                <li><a href="strategy.html">攻略</a></li>
+                <li><a href="esports.html">赛事</a></li>
+                <li><a href="community.html" class="active">社区</a></li>
+                <li><a href="shop.html">商城</a></li>
+                <li><a href="runes.html">铭文</a></li>
+            </ul>
+            <div class="user-info">
+                <img src="images/avatar-default.png" alt="用户头像" class="avatar">
+                <span class="username">游客</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容区 -->
+    <main>
+        <!-- 热门话题 -->
+        <section class="trending-topics">
+            <div class="section-container">
+                <div class="topics-slider">
+                    <div class="topic-card">
+                        <div class="topic-image">
+                            <img src="images/topics/topic1.jpg" alt="话题1">
+                        </div>
+                        <div class="topic-info">
+                            <h3>#新赛季开启#</h3>
+                            <p>参与讨论赢取限定皮肤</p>
+                            <span class="topic-stats">讨论人数：12.5万</span>
+                        </div>
+                    </div>
+                    <!-- 更多话题卡片 -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 内容分类 -->
+        <section class="content-categories">
+            <div class="section-container">
+                <div class="category-tabs">
+                    <div class="tab active" data-type="all">全部</div>
+                    <div class="tab" data-type="official">官方</div>
+                    <div class="tab" data-type="video">视频</div>
+                    <div class="tab" data-type="strategy">攻略</div>
+                    <div class="tab" data-type="artwork">同人创作</div>
+                </div>
+
+                <!-- 内容筛选 -->
+                <div class="content-filter">
+                    <div class="filter-options">
+                        <select class="sort-by">
+                            <option value="hot">热门</option>
+                            <option value="new">最新</option>
+                            <option value="trending">上升最快</option>
+                        </select>
+                    </div>
+                    <button class="post-btn">
+                        <i class="fas fa-edit"></i>
+                        发布内容
+                    </button>
+                </div>
+
+                <!-- 内容列表 -->
+                <div class="content-grid">
+                    <!-- 内容卡片 -->
+                    <div class="content-card">
+                        <div class="card-header">
+                            <div class="user">
+                                <img src="images/avatars/user1.jpg" alt="用户头像">
+                                <div class="user-info">
+                                    <h4>王者玩家</h4>
+                                    <span>2小时前</span>
+                                </div>
+                            </div>
+                            <button class="follow-btn">关注</button>
+                        </div>
+                        <div class="card-content">
+                            <p>分享一波五杀操作，这波团战配合太完美了！</p>
+                            <div class="media-grid">
+                                <img src="images/posts/post1.jpg" alt="游戏截图">
+                            </div>
+                            <div class="tags">
+                                <span>#精彩操作</span>
+                                <span>#团战</span>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button><i class="far fa-heart"></i> 2.5k</button>
+                            <button><i class="far fa-comment"></i> 328</button>
+                            <button><i class="far fa-share-square"></i> 分享</button>
+                        </div>
+                    </div>
+                    <!-- 更多内容卡片 -->
+                </div>
+
+                <!-- 加载更多 -->
+                <div class="load-more">
+                    <button>加载更多</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 社区排行榜 -->
+        <section class="community-rankings">
+            <div class="section-container">
+                <h2 class="section-title">社区之星</h2>
+                <div class="rankings-grid">
+                    <div class="ranking-card">
+                        <div class="rank-badge">1</div>
+                        <img src="images/avatars/top1.jpg" alt="用户头像">
+                        <div class="rank-info">
+                            <h3>最佳创作者</h3>
+                            <p>用户名</p>
+                            <span>月度贡献值：8.9k</span>
+                        </div>
+                    </div>
+                    <!-- 更多排行卡片 -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 发布内容弹窗 -->
+    <div class="post-modal" id="postModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>发布内容</h2>
+            <form id="postForm">
+                <textarea placeholder="分享你的游戏时刻..."></textarea>
+                <div class="upload-section">
+                    <button type="button" class="upload-btn">
+                        <i class="fas fa-image"></i>
+                        添加图片/视频
+                    </button>
+                    <div class="upload-preview"></div>
+                </div>
+                <div class="post-options">
+                    <select class="post-category">
+                        <option value="">选择分类</option>
+                        <option value="strategy">攻略</option>
+                        <option value="video">视频</option>
+                        <option value="artwork">同人创作</option>
+                    </select>
+                    <input type="text" placeholder="添加话题 #" class="topic-input">
+                </div>
+                <button type="submit" class="submit-btn">发布</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <!-- 页脚内容 -->
+    </footer>
+
+    <script src="js/community.js"></script>
+</body>
+</html> 

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>王者荣耀官方网站</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="./img/logo.webp" alt="王者荣耀">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">首页</a></li>
+                <li><a href="heroes.html">英雄</a></li>
+                <li><a href="strategy.html">攻略</a></li>
+                <li><a href="esports.html">赛事</a></li>
+                <li><a href="community.html">社区</a></li>
+                <li><a href="shop.html">商城</a></li>
+                <li><a href="runes.html">铭文</a></li>
+            </ul>
+            <div class="user-info">
+                <img src="https://game.gtimg.cn/images/yxzj/web201706/images/common/head.png" alt="用户头像" class="avatar">
+                <span class="username">游客</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容区 -->
+    <main>
+        <!-- 英雄轮播图 -->
+        <section class="hero-banner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://game.gtimg.cn/images/yxzj/web201706/images/comm/banner/banner1.jpg" alt="最新英雄">
+                        <div class="slide-content">
+                            <h2>新英雄登场</h2>
+                            <p>体验全新英雄的超强战斗力</p>
+                            <a href="#" class="btn-details">查看详情</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://game.gtimg.cn/images/yxzj/web201706/images/comm/banner/banner2.jpg" alt="最新活动">
+                        <div class="slide-content">
+                            <h2>限时活动</h2>
+                            <p>参与活动赢取丰厚奖励</p>
+                            <a href="#" class="btn-details">立即参与</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+
+        <!-- 新闻公告区 -->
+        <section class="news-section">
+            <div class="section-container">
+                <div class="news-tabs">
+                    <div class="tab active" data-tab="news">新闻资讯</div>
+                    <div class="tab" data-tab="notice">游戏公告</div>
+                    <div class="tab" data-tab="activity">活动中心</div>
+                </div>
+                <div class="news-content active" id="news">
+                    <ul class="news-list">
+                        <li>
+                            <span class="news-type">[新闻]</span>
+                            <a href="#">最新版本更新内容一览</a>
+                            <span class="news-date">04-10</span>
+                        </li>
+                        <li>
+                            <span class="news-type">[赛事]</span>
+                            <a href="#">KPL春季赛赛程公布</a>
+                            <span class="news-date">04-09</span>
+                        </li>
+                        <li>
+                            <span class="news-type">[新闻]</span>
+                            <a href="#">新英雄背景故事揭秘</a>
+                            <span class="news-date">04-08</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 热门英雄 -->
+        <section class="hot-heroes">
+            <div class="section-container">
+                <h2 class="section-title">热门英雄</h2>
+                <div class="hero-grid">
+                    <div class="hero-card">
+                        <img src="https://game.gtimg.cn/images/yxzj/img201606/heroimg/131/131.jpg" alt="李白">
+                        <div class="hero-info">
+                            <h3>李白</h3>
+                            <p>青莲剑仙</p>
+                        </div>
+                    </div>
+                    <div class="hero-card">
+                        <img src="https://game.gtimg.cn/images/yxzj/img201606/heroimg/109/109.jpg" alt="妲己">
+                        <div class="hero-info">
+                            <h3>妲己</h3>
+                            <p>魅惑之狐</p>
+                        </div>
+                    </div>
+                    <div class="hero-card">
+                        <img src="https://game.gtimg.cn/images/yxzj/img201606/heroimg/166/166.jpg" alt="亚瑟">
+                        <div class="hero-info">
+                            <h3>亚瑟</h3>
+                            <p>圣骑之力</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 赛事直播 -->
+        <section class="live-matches">
+            <div class="section-container">
+                <h2 class="section-title">赛事直播</h2>
+                <div class="match-grid">
+                    <div class="match-card">
+                        <div class="match-teams">
+                            <img src="https://game.gtimg.cn/images/yxzj/web201706/images/team/team-ag.png" alt="战队1">
+                            <span class="vs">VS</span>
+                            <img src="https://game.gtimg.cn/images/yxzj/web201706/images/team/team-we.png" alt="战队2">
+                        </div>
+                        <div class="match-info">
+                            <h3>KPL春季赛</h3>
+                            <p>4月10日 19:30</p>
+                            <button class="btn-watch">观看直播</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 游戏攻略区 -->
+        <section class="strategy-section">
+            <div class="section-container">
+                <h2 class="section-title">游戏攻略</h2>
+                <div class="strategy-grid">
+                    <div class="strategy-card">
+                        <div class="strategy-image">
+                            <img src="https://game.gtimg.cn/images/yxzj/web201706/images/strategy/guide1.jpg" alt="新手教学">
+                            <div class="strategy-tag">新手必看</div>
+                        </div>
+                        <div class="strategy-content">
+                            <h3>新手入门教学</h3>
+                            <p>从零开始学习王者荣耀基础操作和游戏常识</p>
+                            <div class="strategy-meta">
+                                <span><i class="fas fa-eye"></i> 12.5万</span>
+                                <span><i class="fas fa-thumbs-up"></i> 8.2万</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="strategy-card">
+                        <div class="strategy-image">
+                            <img src="https://game.gtimg.cn/images/yxzj/web201706/images/strategy/guide2.jpg" alt="进阶技巧">
+                            <div class="strategy-tag">进阶技巧</div>
+                        </div>
+                        <div class="strategy-content">
+                            <h3>高端局必备技能</h3>
+                            <p>专业玩家分享高端对局技巧与意识</p>
+                            <div class="strategy-meta">
+                                <span><i class="fas fa-eye"></i> 9.8万</span>
+                                <span><i class="fas fa-thumbs-up"></i> 6.4万</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="strategy-card">
+                        <div class="strategy-image">
+                            <img src="https://game.gtimg.cn/images/yxzj/web201706/images/strategy/guide3.jpg" alt="英雄教学">
+                            <div class="strategy-tag">英雄教学</div>
+                        </div>
+                        <div class="strategy-content">
+                            <h3>热门英雄玩法详解</h3>
+                            <p>最新版本热门英雄出装铭文搭配指南</p>
+                            <div class="strategy-meta">
+                                <span><i class="fas fa-eye"></i> 15.3万</span>
+                                <span><i class="fas fa-thumbs-up"></i> 10.1万</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 游戏特色 -->
+        <section class="features-section">
+            <div class="section-container">
+                <h2 class="section-title">游戏特色</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>多人竞技</h3>
+                        <p>5V5经典对战，团队配合制胜</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3>排位赛季</h3>
+                        <p>公平竞技，展现实力</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h3>荣耀皮肤</h3>
+                        <p>精美皮肤，炫酷特效</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h3>趣味玩法</h3>
+                        <p>多样模式，乐趣无穷</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 精彩视频 -->
+        <section class="videos-section">
+            <div class="section-container">
+                <h2 class="section-title">精彩视频</h2>
+                <div class="video-grid">
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="https://game.gtimg.cn/images/yxzj/web201706/images/video/video1.jpg" alt="精彩视频1">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <span class="video-duration">05:32</span>
+                        </div>
+                        <div class="video-info">
+                            <h3>王者时刻：五杀收割秀</h3>
+                            <p>职业选手精彩操作集锦</p>
+                            <div class="video-stats">
+                                <span>播放：18.5万</span>
+                                <span>点赞：2.3万</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 更多视频卡片 -->
+                </div>
+                <div class="view-more">
+                    <a href="#" class="btn-more">查看更多视频</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 社区互动 -->
+        <section class="community-section">
+            <div class="section-container">
+                <h2 class="section-title">玩家社区</h2>
+                <div class="community-content">
+                    <div class="community-posts">
+                        <div class="post-card">
+                            <div class="post-header">
+                                <img src="https://game.gtimg.cn/images/yxzj/web201706/images/comm/avatar1.jpg" alt="用户头像" class="post-avatar">
+                                <div class="post-info">
+                                    <h3>快乐玩家123</h3>
+                                    <span class="post-time">2小时前</span>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <p>分享一波五杀操作，大家看看怎么样？</p>
+                                <div class="post-media">
+                                    <img src="https://game.gtimg.cn/images/yxzj/web201706/images/comm/gameplay1.jpg" alt="游戏截图">
+                                </div>
+                            </div>
+                            <div class="post-actions">
+                                <button><i class="fas fa-heart"></i> 点赞</button>
+                                <button><i class="fas fa-comment"></i> 评论</button>
+                                <button><i class="fas fa-share"></i> 分享</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="community-sidebar">
+                        <div class="hot-topics">
+                            <h3>热门话题</h3>
+                            <ul>
+                                <li><a href="#">#新赛季开启</a></li>
+                                <li><a href="#">#五五开黑节</a></li>
+                                <li><a href="#">#新英雄爆料</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <div class="link-group">
+                    <h3>游戏资料</h3>
+                    <ul>
+                        <li><a href="#">游戏介绍</a></li>
+                        <li><a href="#">英雄资料</a></li>
+                        <li><a href="#">爆料站</a></li>
+                    </ul>
+                </div>
+                <div class="link-group">
+                    <h3>社区互动</h3>
+                    <ul>
+                        <li><a href="#">官方论坛</a></li>
+                        <li><a href="#">微博</a></li>
+                        <li><a href="#">微信公众号</a></li>
+                    </ul>
+                </div>
+                <div class="link-group">
+                    <h3>赛事中心</h3>
+                    <ul>
+                        <li><a href="#">KPL</a></li>
+                        <li><a href="#">城市赛</a></li>
+                        <li><a href="#">王者高校联赛</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © 2024 王者荣耀 All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html> 

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赛事 - 王者荣耀官方网站</title>
+    <link rel="stylesheet" href="css/esports.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏保持一致 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="./img/logo.webp" alt="王者荣耀">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="heroes.html">英雄</a></li>
+                <li><a href="strategy.html">攻略</a></li>
+                <li><a href="esports.html" class="active">赛事</a></li>
+                <li><a href="community.html">社区</a></li>
+                <li><a href="shop.html">商城</a></li>
+                <li><a href="runes.html">铭文</a></li>
+            </ul>
+            <div class="user-info">
+                <img src="images/avatar-default.png" alt="用户头像" class="avatar">
+                <span class="username">游客</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容区 -->
+    <main>
+        <!-- 赛事直播横幅 -->
+        <section class="live-banner">
+            <div class="section-container">
+                <div class="live-match">
+                    <div class="match-info">
+                        <div class="tournament">KPL春季赛</div>
+                        <div class="teams">
+                            <div class="team">
+                                <img src="images/teams/team1.png" alt="战队1">
+                                <span>AG超玩会</span>
+                            </div>
+                            <div class="vs">VS</div>
+                            <div class="team">
+                                <img src="images/teams/team2.png" alt="战队2">
+                                <span>WE</span>
+                            </div>
+                        </div>
+                        <div class="match-time">今天 19:30</div>
+                    </div>
+                    <button class="watch-btn">
+                        <i class="fas fa-play"></i>
+                        观看直播
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 赛事日程 -->
+        <section class="match-schedule">
+            <div class="section-container">
+                <h2 class="section-title">赛事日程</h2>
+                <div class="schedule-tabs">
+                    <div class="tab active">全部赛事</div>
+                    <div class="tab">KPL</div>
+                    <div class="tab">挑战者杯</div>
+                    <div class="tab">城市赛</div>
+                </div>
+                <div class="schedule-list">
+                    <div class="date-group">
+                        <div class="date">4月10日 星期三</div>
+                        <div class="matches">
+                            <div class="match-item">
+                                <div class="match-time">19:30</div>
+                                <div class="match-teams">
+                                    <span>AG超玩会</span>
+                                    <img src="images/teams/team1.png" alt="AG超玩会">
+                                    <div class="score">VS</div>
+                                    <img src="images/teams/team2.png" alt="WE">
+                                    <span>WE</span>
+                                </div>
+                                <div class="match-status">未开始</div>
+                            </div>
+                            <!-- 更多比赛 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 赛事新闻 -->
+        <section class="esports-news">
+            <div class="section-container">
+                <h2 class="section-title">赛事新闻</h2>
+                <div class="news-grid">
+                    <div class="news-card featured">
+                        <img src="images/news/news1.jpg" alt="新闻1">
+                        <div class="news-content">
+                            <div class="news-tag">赛事快讯</div>
+                            <h3>KPL春季赛季后赛赛程公布</h3>
+                            <p>2024年KPL春季赛季后赛即将开启，八支战队将展开激烈角逐...</p>
+                            <div class="news-meta">
+                                <span><i class="far fa-clock"></i> 2小时前</span>
+                                <span><i class="far fa-eye"></i> 12.5万</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 更多新闻卡片 -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 战队排名 -->
+        <section class="team-rankings">
+            <div class="section-container">
+                <h2 class="section-title">战队排名</h2>
+                <div class="rankings-table">
+                    <div class="table-header">
+                        <div class="rank">排名</div>
+                        <div class="team">战队</div>
+                        <div class="matches">场次</div>
+                        <div class="wins">胜场</div>
+                        <div class="losses">负场</div>
+                        <div class="points">积分</div>
+                    </div>
+                    <div class="table-body">
+                        <!-- 战队排名数据 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 精彩集锦 -->
+        <section class="highlights">
+            <div class="section-container">
+                <h2 class="section-title">精彩集锦</h2>
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <div class="video-thumbnail">
+                            <img src="images/highlights/highlight1.jpg" alt="集锦1">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <span class="duration">3:45</span>
+                        </div>
+                        <div class="highlight-info">
+                            <h3>AG超玩会 vs WE 第一局精彩集锦</h3>
+                            <div class="highlight-meta">
+                                <span><i class="far fa-eye"></i> 8.5万</span>
+                                <span><i class="far fa-heart"></i> 1.2万</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 更多集锦卡片 -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <!-- 页脚内容 -->
+    </footer>
+
+    <script src="js/esports.js"></script>
+</body>
+</html> 

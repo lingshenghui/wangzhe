@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英雄 - 王者荣耀官方网站</title>
+    <link rel="stylesheet" href="css/heroes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏与index.html保持一致 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="./img/logo.webp" alt="王者荣耀">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="heroes.html" class="active">英雄</a></li>
+                <li><a href="strategy.html">攻略</a></li>
+                <li><a href="esports.html">赛事</a></li>
+                <li><a href="community.html">社区</a></li>
+                <li><a href="shop.html">商城</a></li>
+                <li><a href="runes.html">铭文</a></li>
+            </ul>
+            <div class="user-info">
+                <img src="https://game.gtimg.cn/images/yxzj/web201706/images/common/head.png" alt="用户头像" class="avatar">
+                <span class="username">游客</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容区 -->
+    <main>
+        <!-- 英雄搜索和筛选 -->
+        <section class="hero-filter">
+            <div class="section-container">
+                <div class="search-box">
+                    <input type="text" placeholder="搜索英雄" id="heroSearch">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="filter-options">
+                    <div class="filter-group active" data-role="all">全部</div>
+                    <div class="filter-group" data-role="tank">坦克</div>
+                    <div class="filter-group" data-role="warrior">战士</div>
+                    <div class="filter-group" data-role="assassin">刺客</div>
+                    <div class="filter-group" data-role="mage">法师</div>
+                    <div class="filter-group" data-role="marksman">射手</div>
+                    <div class="filter-group" data-role="support">辅助</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 英雄列表 -->
+        <section class="hero-list">
+            <div class="section-container">
+                <div class="hero-grid">
+                    <!-- 示例英雄卡片 -->
+                    <div class="hero-card" data-role="assassin">
+                        <div class="hero-avatar">
+                            <img src="https://game.gtimg.cn/images/yxzj/img201606/heroimg/131/131.jpg" alt="李白">
+                            <div class="hero-difficulty">
+                                <span class="difficulty-level">难度：</span>
+                                <span class="stars">★★★</span>
+                            </div>
+                        </div>
+                        <div class="hero-info">
+                            <h3>李白</h3>
+                            <p>青莲剑仙</p>
+                            <div class="hero-tags">
+                                <span class="tag">刺客</span>
+                                <span class="tag">物理伤害</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-card" data-role="mage">
+                        <div class="hero-avatar">
+                            <img src="https://game.gtimg.cn/images/yxzj/img201606/heroimg/109/109.jpg" alt="妲己">
+                            <div class="hero-difficulty">
+                                <span class="difficulty-level">难度：</span>
+                                <span class="stars">★★</span>
+                            </div>
+                        </div>
+                        <div class="hero-info">
+                            <h3>妲己</h3>
+                            <p>魅惑之狐</p>
+                            <div class="hero-tags">
+                                <span class="tag">法师</span>
+                                <span class="tag">魔法伤害</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 英雄详情弹窗 -->
+        <div class="hero-modal" id="heroModal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="hero-detail">
+                    <div class="hero-banner">
+                        <img src="https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/131/131-bigskin-1.jpg" alt="英雄皮肤">
+                        <div class="hero-title">
+                            <h2>李白</h2>
+                            <p>青莲剑仙</p>
+                        </div>
+                    </div>
+                    <div class="hero-abilities">
+                        <h3>技能介绍</h3>
+                        <div class="abilities-list">
+                            <div class="ability">
+                                <img src="https://game.gtimg.cn/images/yxzj/img201606/heroimg/131/1311.png" alt="技能1">
+                                <div class="ability-info">
+                                    <h4>青莲剑歌</h4>
+                                    <p>李白化为剑光冲向指定方向，对路径上的敌人造成物理伤害...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <!-- 页脚内容 -->
+    </footer>
+
+    <script src="js/heroes.js"></script>
+</body>
+</html> 

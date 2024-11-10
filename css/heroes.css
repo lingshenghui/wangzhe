@@ -1,0 +1,368 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Microsoft YaHei", sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* 导航栏样式 */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    background: linear-gradient(45deg, #ffd700, #ff6b00);
+    color: #000;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid #ffd700;
+}
+
+.username {
+    color: #fff;
+}
+
+/* 主要内容区域 */
+main {
+    margin-top: 70px;
+    padding: 30px 0;
+}
+
+/* 英雄筛选区域 */
+.hero-filter {
+    background: linear-gradient(135deg, #1a1a1a, #333);
+    padding: 40px 0;
+    margin-bottom: 40px;
+}
+
+.section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.search-box {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto 30px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 15px 20px;
+    padding-right: 50px;
+    border: none;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.search-box input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+}
+
+.search-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffd700;
+    cursor: pointer;
+}
+
+.filter-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.filter-group {
+    padding: 10px 25px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filter-group:hover,
+.filter-group.active {
+    background: linear-gradient(45deg, #ffd700, #ff6b00);
+    transform: translateY(-2px);
+}
+
+/* 英雄列表样式 */
+.hero-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.hero-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.hero-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.hero-avatar {
+    position: relative;
+    height: 200px;
+}
+
+.hero-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-difficulty {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.stars {
+    color: #ffd700;
+}
+
+.hero-info {
+    padding: 20px;
+}
+
+.hero-info h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.hero-info p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.hero-tags {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.tag {
+    background: #f0f0f0;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    color: #666;
+}
+
+.hero-stats {
+    padding: 0 20px 20px;
+}
+
+.stat {
+    margin-bottom: 10px;
+}
+
+.stat span {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.stat-bar {
+    height: 6px;
+    background: #eee;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.stat-fill {
+    height: 100%;
+    background: linear-gradient(45deg, #ffd700, #ff6b00);
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+/* 英雄详情弹窗 */
+.hero-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1100;
+    overflow-y: auto;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 1000px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero-banner {
+    position: relative;
+    height: 300px;
+}
+
+.hero-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-title {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-title h2 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.hero-abilities,
+.hero-builds {
+    padding: 30px;
+}
+
+.hero-abilities h3,
+.hero-builds h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.abilities-list {
+    display: grid;
+    gap: 20px;
+}
+
+.ability {
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+    background: #f8f8f8;
+    border-radius: 10px;
+}
+
+.ability img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.ability-info h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.ability-info p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .hero-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+
+    .modal-content {
+        margin: 20px;
+    }
+
+    .hero-banner {
+        height: 200px;
+    }
+} 

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>铭文 - 王者荣耀官方网站</title>
+    <link rel="stylesheet" href="css/runes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏保持一致 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="./img/logo.webp" alt="王者荣耀">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="heroes.html">英雄</a></li>
+                <li><a href="strategy.html">攻略</a></li>
+                <li><a href="esports.html">赛事</a></li>
+                <li><a href="community.html">社区</a></li>
+                <li><a href="shop.html">商城</a></li>
+                <li><a href="runes.html" class="active">铭文</a></li>
+            </ul>
+            <div class="user-info">
+                <img src="images/avatar-default.png" alt="用户头像" class="avatar">
+                <span class="username">游客</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容区 -->
+    <main>
+        <!-- 铭文系统介绍 -->
+        <section class="runes-intro">
+            <div class="section-container">
+                <h1>铭文系统</h1>
+                <p class="intro-text">铭文系统是王者荣耀中的一个重要养成系统，可以为英雄提供额外的属性加成。</p>
+                <div class="rune-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>防御加成</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-fist-raised"></i>
+                        <span>攻击加成</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>生命加成</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 铭文分类 -->
+        <section class="runes-categories">
+            <div class="section-container">
+                <div class="category-tabs">
+                    <div class="tab active" data-type="all">全部铭文</div>
+                    <div class="tab" data-type="red">红色铭文</div>
+                    <div class="tab" data-type="blue">蓝色铭文</div>
+                    <div class="tab" data-type="green">绿色铭文</div>
+                </div>
+
+                <!-- 铭文搜索 -->
+                <div class="search-box">
+                    <input type="text" placeholder="搜索铭文">
+                    <i class="fas fa-search"></i>
+                </div>
+
+                <!-- 铭文列表 -->
+                <div class="runes-grid">
+                    <!-- 铭文卡片 -->
+                    <div class="rune-card" data-type="red">
+                        <div class="rune-icon">
+                            <img src="images/runes/rune1.png" alt="攻击铭文">
+                        </div>
+                        <div class="rune-info">
+                            <h3>暴击铭文</h3>
+                            <p class="rune-effect">物理暴击率 +2%</p>
+                            <div class="rune-level">
+                                <span>等级 5</span>
+                                <div class="level-bar">
+                                    <div class="level-fill" style="width: 100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 更多铭文卡片 -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 推荐搭配 -->
+        <section class="rune-combinations">
+            <div class="section-container">
+                <h2 class="section-title">推荐搭配</h2>
+                <div class="combinations-grid">
+                    <div class="combination-card">
+                        <div class="hero-info">
+                            <img src="images/heroes/hero-avatar1.jpg" alt="英雄头像">
+                            <h3>李白</h3>
+                            <p>刺客型铭文搭配</p>
+                        </div>
+                        <div class="runes-setup">
+                            <div class="setup-group">
+                                <h4>红色铭文</h4>
+                                <div class="rune-slots">
+                                    <!-- 铭文槽位 -->
+                                </div>
+                            </div>
+                            <div class="setup-group">
+                                <h4>蓝色铭文</h4>
+                                <div class="rune-slots">
+                                    <!-- 铭文槽位 -->
+                                </div>
+                            </div>
+                            <div class="setup-group">
+                                <h4>绿色铭文</h4>
+                                <div class="rune-slots">
+                                    <!-- 铭文槽位 -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="total-stats">
+                            <h4>属性加成</h4>
+                            <ul>
+                                <li>物理攻击 +100</li>
+                                <li>物理穿透 +10%</li>
+                                <li>移动速度 +5%</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 更多推荐搭配 -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 铭文升级系统 -->
+        <section class="rune-upgrade">
+            <div class="section-container">
+                <h2 class="section-title">铭文升级</h2>
+                <div class="upgrade-system">
+                    <div class="upgrade-info">
+                        <h3>升级说明</h3>
+                        <ul>
+                            <li>使用金币升级铭文</li>
+                            <li>每级提供更强属性加成</li>
+                            <li>最高可升至5级</li>
+                        </ul>
+                    </div>
+                    <div class="upgrade-calculator">
+                        <h3>升级计算器</h3>
+                        <div class="calculator-form">
+                            <div class="form-group">
+                                <label>当前等级</label>
+                                <select id="currentLevel">
+                                    <option value="1">1级</option>
+                                    <option value="2">2级</option>
+                                    <option value="3">3级</option>
+                                    <option value="4">4级</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>目标等级</label>
+                                <select id="targetLevel">
+                                    <option value="2">2级</option>
+                                    <option value="3">3级</option>
+                                    <option value="4">4级</option>
+                                    <option value="5">5级</option>
+                                </select>
+                            </div>
+                            <div class="cost-result">
+                                需要金币: <span id="upgradeCost">0</span>
+                            </div>
+                            <button class="upgrade-btn">升级</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <!-- 页脚内容 -->
+    </footer>
+
+    <script src="js/runes.js"></script>
+</body>
+</html> 
