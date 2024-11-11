@@ -44,9 +44,18 @@
 }
 
 .user-info {
+    position: relative;
+    cursor: pointer;
     display: flex;
     align-items: center;
     gap: 10px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.user-info:hover {
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .avatar {
@@ -54,8 +63,97 @@
     height: 35px;
     border-radius: 50%;
     border: 2px solid #ffd700;
+    transition: 0.3s;
+}
+
+.user-info:hover .avatar {
+    border-color: #ff6b00;
+    transform: scale(1.05);
 }
 
 .username {
     color: #fff;
+    font-size: 14px;
+}
+
+/* 下拉菜单样式 */
+.user-dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 5px);
+    right: 0;
+    background: rgba(0, 0, 0, 0.95);
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    border-radius: 12px;
+    padding: 8px;
+    min-width: 140px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3),
+                0 0 15px rgba(255, 215, 0, 0.1);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+/* 鼠标悬停时显示下拉菜单 */
+.user-info:hover .user-dropdown {
+    display: block;
+    animation: dropdownFadeIn 0.3s ease;
+}
+
+/* 下拉菜单箭头 */
+.user-dropdown::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: 20px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid rgba(0, 0, 0, 0.95);
+}
+
+/* 下拉菜单链接样式 */
+.user-dropdown a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.user-dropdown a:hover {
+    background: linear-gradient(45deg, #ffd700, #ff6b00);
+    color: #000;
+    transform: translateX(5px);
+}
+
+.logout-btn::before {
+    content: '⟲';  /* 添加登出图标 */
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+/* 动画效果 */
+@keyframes dropdownFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .username {
+        display: none;
+    }
+    
+    .user-dropdown {
+        right: -10px;
+    }
 } 
