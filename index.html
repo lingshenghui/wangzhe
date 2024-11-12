@@ -36,57 +36,87 @@
 
     <!-- 主要内容区 -->
     <main>
-        <!-- 英雄轮播图 -->
-        <section class="hero-banner">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="./img/index.jpg" alt="最新英雄">
-                        <div class="slide-content">
-                        
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                       
-                        <div class="slide-content">
-                            <h2>限时活动</h2>
-                            <p>参与活动赢取丰厚奖励</p>
-                            <a href="#" class="btn-details">立即参与</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div>
-        </section>
-
-        <!-- 新闻公告区 -->
-        <section class="news-section">
+        <!-- 创建一个顶部区域容器 -->
+        <section class="top-section">
             <div class="section-container">
-                <div class="news-tabs">
-                    <div class="tab active" data-tab="news">新闻资讯</div>
-                    <div class="tab" data-tab="notice">游戏公告</div>
-                    <div class="tab" data-tab="activity">活动中心</div>
-                </div>
-                <div class="news-content active" id="news">
-                    <ul class="news-list">
-                        <li>
-                            <span class="news-type">[新闻]</span>
-                            <a href="#">最新版本更新内容一览</a>
-                            <span class="news-date">04-10</span>
-                        </li>
-                        <li>
-                            <span class="news-type">[赛事]</span>
-                            <a href="#">KPL春季赛赛程公布</a>
-                            <span class="news-date">04-09</span>
-                        </li>
-                        <li>
-                            <span class="news-type">[新闻]</span>
-                            <a href="#">新英雄背景故事揭秘</a>
-                            <span class="news-date">04-08</span>
-                        </li>
-                    </ul>
+                <div class="top-content">
+                    <!-- 轮播图区域 -->
+                    <div class="hero-banner">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./img/index.jpg" alt="最新英雄">
+                                    <div class="slide-content">
+                                    
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                   
+                                    <div class="slide-content">
+                                        <h2>限时活动</h2>
+                                        <p>参与活动赢丰厚奖励</p>
+                                        <a href="#" class="btn-details">立即参与</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+
+                    <!-- 新闻公告区域 -->
+                    <div class="news-section">
+                        <div class="section-container">
+                            <div class="news-tabs">
+                                <div class="tab active">新闻资讯</div>
+                                <div class="tab">游戏公告</div>
+                                <div class="tab">活动中心</div>
+                            </div>
+                            <div class="news-content active">
+                                <ul class="news-list">
+                                    <li>
+                                        <span class="news-type">[新闻]</span>
+                                        <a href="#">最新版本更新内容一览</a>
+                                        <span class="news-date">04-10</span>
+                                    </li>
+                                    <li>
+                                        <span class="news-type">[新闻]</span>
+                                        <a href="#">新英雄背景故事揭秘</a>
+                                        <span class="news-date">04-09</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="news-content">
+                                <ul class="news-list">
+                                    <li>
+                                        <span class="news-type">[公告]</span>
+                                        <a href="#">服务器维护通知</a>
+                                        <span class="news-date">04-10</span>
+                                    </li>
+                                    <li>
+                                        <span class="news-type">[公告]</span>
+                                        <a href="#">版本更新说明</a>
+                                        <span class="news-date">04-09</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="news-content">
+                                <ul class="news-list">
+                                    <li>
+                                        <span class="news-type">[活动]</span>
+                                        <a href="#">五五开黑节活动开启</a>
+                                        <span class="news-date">04-10</span>
+                                    </li>
+                                    <li>
+                                        <span class="news-type">[活动]</span>
+                                        <a href="#">限定皮肤返场活动</a>
+                                        <span class="news-date">04-09</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

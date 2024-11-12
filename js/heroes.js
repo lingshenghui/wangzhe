@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // 筛选按钮点击事件
     filterGroups.forEach(group => {
         group.addEventListener('click', function() {
-            // 移除所有active类
+            // 移除所有active��
             filterGroups.forEach(g => g.classList.remove('active'));
             // 添加active类到当前选中的筛选项
             this.classList.add('active');
@@ -246,12 +246,118 @@ document.addEventListener('DOMContentLoaded', function() {
         const modalTitle = modal.querySelector('.hero-title h2');
         const modalSubtitle = modal.querySelector('.hero-title p');
         const modalBanner = modal.querySelector('.hero-banner img');
+        
+        // 更新英雄名称和标题
+        modalTitle.textContent = hero.name; // 显示英雄名称
+        modalSubtitle.textContent = hero.title; // 显示英雄标题
+        modalBanner.src = hero.image; // 确保使用正确的图片路径
 
-        modalTitle.textContent = hero.name;
-        modalSubtitle.textContent = hero.title;
-        modalBanner.src = `img/heroes/${hero.image}`;
+        // 更新技能介绍（假设您有一个技能介绍的映射）
+        const skillDescription = getSkillDescription(hero.name); // 获取技能描述
+        const skillInfoContainer = modal.querySelector('.hero-abilities .abilities-list');
+        skillInfoContainer.innerHTML = skillDescription; // 更新技能介绍内容
 
         modal.style.display = 'block';
+    }
+
+    // 假设您有一个函数来获取技能描述
+    function getSkillDescription(heroName) {
+        const skills = {
+            '李白': `<div class="ability">
+                        <img src="./img/李白.webp" alt="技能1">
+                        <div class="ability-info">
+                            <h4>青莲剑歌</h4>
+                            <p>李白化为剑光冲向指定方向，对路径上的敌人造成物理伤害...</p>
+                        </div>
+                    </div>`,
+            '妲己': `<div class="ability">
+                        <img src="./img/妲己.webp" alt="技能1">
+                        <div class="ability-info">
+                            <h4>魅惑之狐</h4>
+                            <p>妲己施放魅惑技能，控制敌人...</p>
+                        </div>
+                    </div>`,
+            '亚瑟': `<div class="ability">
+                        <img src="./img/亚瑟.webp" alt="技能1">
+                        <div class="ability-info">
+                            <h4>圣骑之力</h4>
+                            <p>亚瑟释放圣光，增强自身能力...</p>
+                        </div>
+                    </div>`,
+            '张飞': `<div class="ability">
+                        <img src="./img/张飞.webp" alt="技能1">
+                        <div class="ability-info">
+                            <h4>浑身是胆</h4>
+                            <p>张飞的技能描述...</p>
+                        </div>
+                    </div>`,
+            '程咬金': `<div class="ability">
+                        <img src="./img/程咬金.webp" alt="技能1">
+                        <div class="ability-info">
+                            <h4>热血斗士</h4>
+                            <p>程咬金的技能描述...</p>
+                        </div>
+                    </div>`,
+            '花木兰': `<div class="ability">
+                        <img src="./img/花木兰.webp" alt="技能1">
+                        <div class="ability-info">
+                            <h4>传说之刃</h4>
+                            <p>花木兰的技能描述...</p>
+                        </div>
+                    </div>`,
+            '后羿': `<div class="ability">
+                        <img src="./img/后羿.webp" alt="技能1">
+                        <div class="ability-info">
+                            <h4>半神之弓</h4>
+                            <p>后羿的技能描述...</p>
+                        </div>
+                    </div>`,
+            '韩信': `<div class="ability">
+                        <img src="./img/韩信.webp" alt="技能1">
+                        <div class="ability-info">
+                            <h4>国士无双</h4>
+                            <p>韩信的技能描述...</p>
+                        </div>
+                    </div>`,
+            '安琪拉': `<div class="ability">
+                        <img src="./img/安琪拉.webp" alt="技能1">
+                        <div class="ability-info">
+                            <h4>暗夜萝莉</h4>
+                            <p>安琪拉的技能描述...</p>
+                        </div>
+                    </div>`,
+            '孙尚香': `<div class="ability">
+                        <img src="./img/孙尚香.webp" alt="技能1">
+                        <div class="ability-info">
+                            <h4>千金重弩</h4>
+                            <p>孙尚香的技能描述...</p>
+                        </div>
+                    </div>`,
+            '蔡文姬': `<div class="ability">
+                        <img src="./img/蔡文姬.webp" alt="技能1">
+                        <div class="ability-info">
+                            <h4>天籁弦音</h4>
+                            <p>蔡文姬的技能描述...</p>
+                        </div>
+                    </div>`,
+            // 继续添加其他英雄...
+            '刘备': `<div class="ability">
+                        <img src="./img/刘备.webp" alt="技能1">
+                        <div class="ability-info">
+                            <h4>仁德之心</h4>
+                            <p>刘备的技能描述...</p>
+                        </div>
+                    </div>`,
+            '貂蝉': `<div class="ability">
+                        <img src="./img/貂蝉技能1.webp" alt="技能1">
+                        <div class="ability-info">
+                            <h4>倾国倾城</h4>
+                            <p>貂蝉的技能描述...</p>
+                        </div>
+                    </div>`,
+            // 添加更多英雄...
+        };
+        return skills[heroName] || ''; // 返回对应英雄的技能描述
     }
 
     // 关闭弹窗
@@ -264,5 +370,25 @@ document.addEventListener('DOMContentLoaded', function() {
         if (e.target === modal) {
             modal.style.display = 'none';
         }
+    });
+
+    // 为每个英雄卡片添加点击事件
+    document.querySelectorAll('.hero-card').forEach(card => {
+        card.addEventListener('click', () => {
+            const heroName = card.querySelector('h3').innerText;
+            const heroImage = card.querySelector('.hero-avatar img').src;
+            
+            // 更新弹窗内容
+            document.querySelector('#heroModal .hero-banner img').src = heroImage;
+            document.querySelector('#heroModal .hero-title h2').innerText = heroName;
+
+            // 显示弹窗
+            document.getElementById('heroModal').style.display = 'block';
+        });
+    });
+
+    // 关闭弹窗的事件
+    document.querySelector('.close-modal').addEventListener('click', () => {
+        document.getElementById('heroModal').style.display = 'none';
     });
 });
